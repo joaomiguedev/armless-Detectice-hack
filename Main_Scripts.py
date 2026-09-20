@@ -19,11 +19,11 @@ bt1.place(x=20, y=60)
 def run(map_name):
     if map_name == "Motel Room and Humble Abode":
         root.destroy()
-        import Motel_Room_and_Humble_Abode
+        import Motel_Room_and_Humble_Abode_map.py
         Motel_Room_and_Humble_Abode.run()
     elif map_name == "Bathroom":
         root.destroy()
-        import Bathroom
+        import Bathroom_map.py
         Bathroom.run()
     else:
         messagebox.showwarning("Invalid Map","Please select a valid map name.")
