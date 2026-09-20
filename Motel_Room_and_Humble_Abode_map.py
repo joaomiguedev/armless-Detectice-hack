@@ -48,7 +48,7 @@ suspect_numbers = {"Clara": 1,"Charles": 2,"Sara": 3,"Kyle": 4,"Linda": 5,"Mary"
 def run():
     root = tk.Tk()
 
-    root.title("Hack Armless Detective • Suspect Finder")
+    root.title("Motel Room and Humble Abode • Suspect Finder")
     root.geometry("720x620")
     root.resizable(False, False)
     root.configure(bg="#10141c")
@@ -77,7 +77,7 @@ def run():
     title = tk.Label(header,text="🔎  SUSPECT INVESTIGATION",font=("Segoe UI", 24, "bold"),fg=WHITE,bg="#171d28")
     title.pack(pady=(18, 2))
 
-    subtitle = tk.Label(header,text="Hack Armless Detective Game",font=("Segoe UI", 10),fg=MUTED,bg="#171d28")
+    subtitle = tk.Label(header,text="Motel Room and Humble Abode • Suspect Finder",font=("Segoe UI", 10),fg=MUTED,bg="#171d28")
     subtitle.pack()
 
     main = tk.Frame(root,bg=BG)
@@ -129,6 +129,7 @@ def run():
 
     result_text = tk.Text(result_panel,bg=PANEL,fg=WHITE,insertbackground=WHITE,font=("Consolas", 11),relief="flat",height=6,state="disabled")
     result_text.pack(fill="both",expand=True,padx=18,pady=(0, 12))
+
 
     def find_suspects():
         selected = [combo.get()for combo in combos]
