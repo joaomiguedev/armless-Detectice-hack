@@ -53,7 +53,7 @@ def run():
 
     combos = []
 
-    for i in range(3):
+    for i in range(4):
         combo = Combobox(root,values=evidences_group,state="readonly",width=27)
         combo.place(x=20, y=20 + i * 40)
         combos.append(combo)
