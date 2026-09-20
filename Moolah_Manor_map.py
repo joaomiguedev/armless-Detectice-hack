@@ -59,6 +59,6 @@ def run():
         combos.append(combo)
 
     button = Button(root,text="Find Suspects",command=lambda: Main_command(*(combo.get() for combo in combos)))
-    button.place(x=20, y=145)
+    button.place(x=20, y=170)
 
     root.mainloop()
