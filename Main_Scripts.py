@@ -25,6 +25,10 @@ def run(map_name):
         root.destroy()
         import Bathroom_map
         Bathroom_map.run()
+    elif map_name == "Gas Station map":
+        root.destroy()
+        import Gas_Station_map
+        Gas_Station_map.run()
     else:
         messagebox.showwarning("Invalid Map","Please select a valid map name.")
 
