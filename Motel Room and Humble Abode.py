@@ -41,11 +41,9 @@ evidence_people = {
     ]
 }
 
-
 suspect_numbers = {"Clara": 1,"Charles": 2,"Sara": 3,"Kyle": 4,"Linda": 5,"Mary": 6,"William": 7,"Jimbo": 8,"Junior": 9,"Nancy": 10,"Buck": 11,"Oliver": 12,"Susan": 13,"Matthew": 14,"David": 15,"Trey": 16,"Donald": 17,"Herbert": 18,"Betty": 19,"James": 20,"Sophia": 21,"Rebecca": 22,"Thomas": 23,"Bob": 24}
 
 def Main_command(command1, command2, command3):
-
     passed_evidences = [command1, command2, command3]
 
 
@@ -62,7 +60,6 @@ def Main_command(command1, command2, command3):
     for evidence in passed_evidences[1:]:
         possible_suspects &= set(evidence_people[evidence])
 
-
     if possible_suspects:
         results = []
 
@@ -70,7 +67,6 @@ def Main_command(command1, command2, command3):
 
         for suspect in sorted_suspects:
             number = suspect_numbers[suspect]
-
             results.append(f"{suspect} = {number} Suspect")
 
         messagebox.showinfo("Possible Suspects","\n".join(results))
@@ -82,7 +78,7 @@ def run():
     root = Tk()
 
     root.geometry("400x250")
-    root.title("Suspect Finder")
+    root.title("Suspect Finder - Hack Armless Detective Game")
     root.resizable(False, False)
 
     combo1 = Combobox(root,values=evidences_group,state="readonly",width=25)
@@ -98,5 +94,3 @@ def run():
     button1.place(x=20, y=145)
 
     root.mainloop()
-
-run()
