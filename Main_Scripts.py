@@ -81,4 +81,3 @@ footer = tk.Label(root,text="Suspect Finder • Map Search Tool",font=("Segoe UI
 footer.pack(pady=10)
 
 root.mainloop()
-root.mainloop()
